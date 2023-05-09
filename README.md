@@ -11,9 +11,13 @@
 
     The game is under a prototyping phase. No game beta will be released for the forseeable future. Updates will be posted to contributors in the official discord.
 
-## Installation and Setup (TODO)
+## Contents
+    - (Install / Setup)[]
+    - (License)[]
+    - (Contributing)[]
+    - (Authors)[]
 
-## Example (TODO)
+## Installation and Setup (TODO)
 
 ## License
 
