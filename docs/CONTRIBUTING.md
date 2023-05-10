@@ -38,4 +38,4 @@ Please be descriptive in behavior, and flippant in mechanical detail. We want to
 Our community guidelines should go without saying in almost all instances. No x-phobic slurs, act like you wish to be treated, respect all those who take time out of their day to work on unpaid programming / art. Almost no one should violate this accidentally. Now, getting heated during a meeting is not the worst thing, especially during an argument, but keep it generally civil.
 
 ### Spending Money
-Please dont. We want to keep this rather relaxed, and the moment someone spends money on the project it instantly becomes a question as to whether we can make it back. It's our first game and we are making it in 4 months. We can't. So instead of worrying about it, dont!
+Please dont. We want to keep this rather relaxed, and the moment someone spends money on the project it instantly becomes a question as to whether we can make it back. It's our first game and we are making it in 4 months. We can't make it back. So instead of worrying about it, dont!
