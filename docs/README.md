@@ -12,16 +12,18 @@ A currently unamed game development project. The primary directive of this proje
 The game is under a prototyping phase. No game beta will be released for the forseeable future. Updates will be posted to contributors in the official discord.
 
 ## Contents
-- (Install / Setup)[]
-- (License)[]
-- (Contributing)[]
-- (Authors)[]
+- [Install / Setup]()
+- [License]()
+- [Contributing]()
+- [Authors]()
 
 ## Installation and Setup (TODO)
 
 ## License
+As we cannot afford an attorney, all works are currently copyright and under the ownership of Alexander Williams-Letondre until further notice. A header notice is included in each source code file.
 
 ## Contributing
+Please see our [CONTRIBUTING](https://Physlex/UnnamedProject/docs/CONTRIBUTING.md) guidelines.
 
 ## Authors
 - Jane2664    (Dev, Designer, QA)
