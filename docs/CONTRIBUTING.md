@@ -1,5 +1,5 @@
 # Welcome to our contributing page
-Thanks for joining along on the development of this project! Please make sure before reading ahead, to visit the [README](https://Physlex/UnnamedProject/docs/README.md).
+Thanks for joining along on the development of this project! Please make sure before reading ahead, to visit the [README](https://github.com/Physlex/UnnamedProject/blob/main/docs/README.md).
 
 ## Before moving on
 Due to the lack of funding on our team, and our desire to take things in a more laid-back manner, we are not spending the 16 a month on private organization controls. Hence, it is up to each team member to make sure that they are never pushing, nor merging, to the main branch. When developing code, you are to do so in a branch of your name, and then execute a pull request whenever you finish your code during the next meeting.
