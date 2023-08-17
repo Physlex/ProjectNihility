@@ -1,0 +1,872 @@
+{
+	"folders": [
+		{
+			"name": "Nihility",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off",
+		"files.associations": {
+			"functional": "cpp",
+			"string": "cpp"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug",
+			"dfarley1.file-picker"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Nihility Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Debug",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Debug",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Nihility Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Debug",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"DebugGame",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"DebugGame",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Nihility Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"DebugGame",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Development",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Development",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Nihility Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Development",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Test",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Test",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Nihility Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Test",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Shipping",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Shipping",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Nihility Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"Linux",
+					"Shipping",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Debug",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Debug",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Nihility LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Debug",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Nihility LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Development",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Development",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Nihility LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Development",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Test",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Test",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Nihility LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Test",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Shipping",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Shipping",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Nihility LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "Nihility LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Nihility",
+					"LinuxArm64",
+					"Shipping",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "NihilityEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"NihilityEditor",
+					"Linux",
+					"Debug",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "NihilityEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"NihilityEditor",
+					"Linux",
+					"Debug",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NihilityEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "NihilityEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"NihilityEditor",
+					"Linux",
+					"Debug",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "NihilityEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"NihilityEditor",
+					"Linux",
+					"DebugGame",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "NihilityEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"NihilityEditor",
+					"Linux",
+					"DebugGame",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NihilityEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "NihilityEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"NihilityEditor",
+					"Linux",
+					"DebugGame",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "NihilityEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"NihilityEditor",
+					"Linux",
+					"Development",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "NihilityEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"NihilityEditor",
+					"Linux",
+					"Development",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"NihilityEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			},
+			{
+				"label": "NihilityEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"NihilityEditor",
+					"Linux",
+					"Development",
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Nihility (Debug)",
+				"request": "launch",
+				"program": "/home/physlex/projects/UNP/Nihility/Binaries/Linux/Nihility-Linux-Debug",
+				"preLaunchTask": "Nihility Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main",
+				"type": "cppdbg",
+				"visualizerFile": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch Nihility (DebugGame)",
+				"request": "launch",
+				"program": "/home/physlex/projects/UNP/Nihility/Binaries/Linux/Nihility-Linux-DebugGame",
+				"preLaunchTask": "Nihility Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main",
+				"type": "cppdbg",
+				"visualizerFile": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch Nihility (Development)",
+				"request": "launch",
+				"program": "/home/physlex/projects/UNP/Nihility/Binaries/Linux/Nihility",
+				"preLaunchTask": "Nihility Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main",
+				"type": "cppdbg",
+				"visualizerFile": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch Nihility (Test)",
+				"request": "launch",
+				"program": "/home/physlex/projects/UNP/Nihility/Binaries/Linux/Nihility-Linux-Test",
+				"preLaunchTask": "Nihility Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main",
+				"type": "cppdbg",
+				"visualizerFile": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch Nihility (Shipping)",
+				"request": "launch",
+				"program": "/home/physlex/projects/UNP/Nihility/Binaries/Linux/Nihility-Linux-Shipping",
+				"preLaunchTask": "Nihility Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main",
+				"type": "cppdbg",
+				"visualizerFile": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch NihilityEditor (Debug)",
+				"request": "launch",
+				"program": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "NihilityEditor Linux Debug Build",
+				"args": [
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject"
+				],
+				"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main",
+				"type": "cppdbg",
+				"visualizerFile": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch NihilityEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "NihilityEditor Linux DebugGame Build",
+				"args": [
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject"
+				],
+				"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main",
+				"type": "cppdbg",
+				"visualizerFile": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch NihilityEditor (Development)",
+				"request": "launch",
+				"program": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "NihilityEditor Linux Development Build",
+				"args": [
+					"/home/physlex/projects/UNP/Nihility/Nihility.uproject"
+				],
+				"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main",
+				"type": "cppdbg",
+				"visualizerFile": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/home/physlex/projects/UNP/Nihility/Nihility.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/physlex/Unreal/UnrealEngineUMP-ue5-main"
+			}
+		]
+	}
+}
