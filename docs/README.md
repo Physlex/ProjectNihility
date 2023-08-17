@@ -23,7 +23,7 @@ The game is under a prototyping phase. No game beta will be released for the for
 As we cannot afford an attorney, all works are currently copyright and under the ownership of Alexander Williams-Letondre until further notice. A header notice is included in each source code file.
 
 ## Contributing
-Please see our [CONTRIBUTING](https://Physlex/UnnamedProject/docs/CONTRIBUTING.md) guidelines.
+Please see our [CONTRIBUTING](https://github.com/Physlex/UnnamedProject/blob/main/docs/CONTRIBUTING.md) guidelines.
 
 ## Authors
 - Jane2664    (Dev, Designer, QA)

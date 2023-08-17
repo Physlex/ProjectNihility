@@ -1,5 +1,5 @@
 # Welcome to our contributing page
-Thanks for joining along on the development of this project! Please make sure before reading ahead, to visit the [README](https://Physlex/UnnamedProject/docs/README.md).
+Thanks for joining along on the development of this project! Please make sure before reading ahead, to visit the [README](https://github.com/Physlex/UnnamedProject/blob/main/docs/README.md).
 
 ## Before moving on
 Due to the lack of funding on our team, and our desire to take things in a more laid-back manner, we are not spending the 16 a month on private organization controls. Hence, it is up to each team member to make sure that they are never pushing, nor merging, to the main branch. When developing code, you are to do so in a branch of your name, and then execute a pull request whenever you finish your code during the next meeting.
@@ -38,4 +38,4 @@ Please be descriptive in behavior, and flippant in mechanical detail. We want to
 Our community guidelines should go without saying in almost all instances. No x-phobic slurs, act like you wish to be treated, respect all those who take time out of their day to work on unpaid programming / art. Almost no one should violate this accidentally. Now, getting heated during a meeting is not the worst thing, especially during an argument, but keep it generally civil.
 
 ### Spending Money
-Please dont. We want to keep this rather relaxed, and the moment someone spends money on the project it instantly becomes a question as to whether we can make it back. It's our first game and we are making it in 4 months. We can't. So instead of worrying about it, dont!
+Please dont. We want to keep this rather relaxed, and the moment someone spends money on the project it instantly becomes a question as to whether we can make it back. It's our first game and we are making it in 4 months. We can't make it back. So instead of worrying about it, dont!
