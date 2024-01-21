@@ -24,8 +24,8 @@ As we cannot afford an attorney, all works are currently copyright and under the
 ## Contributing
 Please see our [CONTRIBUTING](https://github.com/Physlex/UnnamedProject/blob/main/docs/CONTRIBUTING.md) guidelines.
 
-## Authors
-- Jane2664    (Dev, Designer, QA)
+## Authors (Present and Prior)
 - Lycaon19    (Dev, Designer, QA)
+- Physlex     (Dev, Game Designer, DevOps, PM, QA)
+- Jane2664    (Dev, Designer, QA)
 - RiddellLink (Dev, Designer, QA)
-- Physlex     (Dev, DevOps, PM, QA)
