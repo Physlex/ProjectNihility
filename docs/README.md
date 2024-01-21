@@ -1,7 +1,6 @@
-# UnnamedProject
-
+# Project Nihility
 ## Description
-A currently unamed game development project. The primary directive of this project is to learn fundamental game development using unreal engine. Secondary considerations are:
+The primary directive of this project is to learn fundamental game development using unreal engine. Secondary considerations are:
 * To become comfortable with computer graphics applications
 * To learn basic UI development
 * To learn framework - based applications development
