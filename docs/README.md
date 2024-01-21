@@ -26,6 +26,6 @@ Please see our [CONTRIBUTING](https://github.com/Physlex/UnnamedProject/blob/mai
 
 ## Authors (Present and Prior)
 - Lycaon19    (Dev, Designer, QA)
-- Physlex     (Dev, Game Designer, DevOps, PM, QA)
+- Physlex     (Dev, Designer, DevOps, PM, QA)
 - Jane2664    (Dev, Designer, QA)
 - RiddellLink (Dev, Designer, QA)
